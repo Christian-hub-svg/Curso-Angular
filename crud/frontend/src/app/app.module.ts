@@ -4,17 +4,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+//Componentes
 import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
-import { HomeComponent } from './views/home/home.component'; 
+import { HomeComponent } from './views/home/home.component';
+import { ProductCrudComponent } from './views/product-crud/product-crud.component';
+import { ProductCreateComponent } from './components/product/product-create/product-create.component'; 
 
+//Módulos
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
-import { ProductCrudComponent } from './views/product-crud/product-crud.component';
+import { MatButtonModule } from '@angular/material/button';
+
+//Diretivas
 import { RedDirective } from './directives/red.directive';
+import { ForDirective } from './directives/for.directive';
+
 
 
 
@@ -27,7 +36,9 @@ import { RedDirective } from './directives/red.directive';
     NavComponent,
     HomeComponent,
     ProductCrudComponent,
-    RedDirective
+    RedDirective,
+    ForDirective,
+    ProductCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +47,8 @@ import { RedDirective } from './directives/red.directive';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
