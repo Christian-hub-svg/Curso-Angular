@@ -1,0 +1,19 @@
+<!-- Interpolar -->
+<p>
+    Lista de noticias do portal {{ nomePortal }}
+</p>
+
+<app-curso-detalhe></app-curso-detalhe>
+
+<!-- <ul>
+    <li>Esportes</li>
+    <li>Tecnologia</li>
+</ul> -->
+
+<ul>
+    <!-- Diretiva de estrutura de laço de repetição
+    for mostrado no TS -->
+    <li *ngFor="let curso of cursos">
+        {{ curso }}
+    </li>
+</ul>
