@@ -11,3 +11,15 @@
 <p highlight>
     Texto com Highlight quando passo o mouse
 </p>
+
+<h5>ngElse</h5>
+<div *ngIf="mostrarCursos">
+    Lista de cursos aqui.
+</div>
+<div *ngElse="mostrarCursos">
+    Não exitem cursos listados.
+</div>
+
+<br>
+<button (click)="onMostrarCursos()">Mostrar cursos</button>
+<br><br>
