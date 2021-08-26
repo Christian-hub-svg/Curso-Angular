@@ -1,0 +1,11 @@
+<p>Descrição: {{ tarefa.desc }}</p>
+
+<!-- Ele não aparece se o objeto for nulo.
+<p>Responsável: {{ tarefa.responsavel.nome }}</p> -->
+
+<!-- Podemos usar um ternário para resolver isso:
+<p>Responsável: {{ tarefa.responsavel != null ? tarefa.responsavel.nome : '' }}</p> -->
+
+<!-- Com o Elvis, colocamos apenas um ? na frente do objeto. -->
+<p>Responsável: {{ tarefa.responsavel?.nome }}</p>
+<p>Responsável: {{ tarefa.responsavel?.usuario?.nome }}</p>
